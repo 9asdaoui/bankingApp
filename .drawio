@@ -1,0 +1,144 @@
+<mxfile host="65bd71144e">
+    <diagram id="5AkZoHMGD4kLnSbjK2lT" name="Page-1">
+        <mxGraphModel dx="9" dy="7" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="295" value="CurrentAccount" style="html=1;overflow=block;blockSpacing=1;swimlane;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;fontStyle=0;marginBottom=0;swimlaneFillColor=#edf5ff;startSize=28;whiteSpace=wrap;fontSize=16;align=left;spacing=0;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="-1675" y="-1345" width="270" height="143.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="296" value="&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;- overdraft_limit: float &#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;- monthly_fee: float&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="part=1;html=1;resizeHeight=0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#edf5ff;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;fontSize=16;" parent="295" vertex="1">
+                    <mxGeometry y="28" width="270" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="297" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="295" vertex="1">
+                    <mxGeometry y="82" width="270" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="298" value="&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+insert(&lt;/span&gt;&lt;span style=&quot;font-size:15px;font-style: italic;&quot;&gt;valeus&lt;/span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;)&#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+modife(&lt;/span&gt;&lt;span style=&quot;font-size:15px;font-style: italic;&quot;&gt;valeus&lt;/span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;)&#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+ chargeMonthlyFee()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="part=1;resizeHeight=0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#edf5ff;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;" parent="295" vertex="1">
+                    <mxGeometry y="90" width="270" height="53.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="299" value="SavingsAccount" style="html=1;overflow=block;blockSpacing=1;swimlane;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;fontStyle=0;marginBottom=0;swimlaneFillColor=#edf5ff;startSize=28;whiteSpace=wrap;fontSize=16;align=left;spacing=0;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="-2380" y="-1345" width="270" height="181.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="300" value="&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;- interest_rate: float &#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;- minimum_balance: float&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="part=1;html=1;resizeHeight=0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#edf5ff;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;fontSize=16;" parent="299" vertex="1">
+                    <mxGeometry y="28" width="270" height="73" as="geometry"/>
+                </mxCell>
+                <mxCell id="301" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="299" vertex="1">
+                    <mxGeometry y="101" width="270" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="302" value="&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+insert(&lt;/span&gt;&lt;span style=&quot;font-size:15px;font-style: italic;&quot;&gt;valeus&lt;/span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;)&#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+modife(&lt;/span&gt;&lt;span style=&quot;font-size:15px;font-style: italic;&quot;&gt;valeus&lt;/span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;)&#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+ applyInterest()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="part=1;resizeHeight=0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#edf5ff;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;" parent="299" vertex="1">
+                    <mxGeometry y="109" width="270" height="72.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="303" value="BusinessAccount" style="html=1;overflow=block;blockSpacing=1;swimlane;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;fontStyle=0;marginBottom=0;swimlaneFillColor=#edf5ff;startSize=28;whiteSpace=wrap;fontSize=16;align=left;spacing=0;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="-2035" y="-1345" width="270" height="163.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="304" value="&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;- credit_limit: float &#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;- transaction_fee: float &#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;- business_name: String&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="part=1;html=1;resizeHeight=0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#edf5ff;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;fontSize=16;" parent="303" vertex="1">
+                    <mxGeometry y="28" width="270" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="305" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="303" vertex="1">
+                    <mxGeometry y="92" width="270" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="306" value="&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+insert(&lt;/span&gt;&lt;span style=&quot;font-size:15px;font-style: italic;&quot;&gt;valeus&lt;/span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;)&#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+modife(&lt;/span&gt;&lt;span style=&quot;font-size:15px;font-style: italic;&quot;&gt;valeus&lt;/span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;)&#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+ applyTransactionFee()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="part=1;resizeHeight=0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#edf5ff;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;" parent="303" vertex="1">
+                    <mxGeometry y="100" width="270" height="63.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="307" value="Account" style="html=1;overflow=block;blockSpacing=1;swimlane;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;fontStyle=0;marginBottom=0;swimlaneFillColor=#edf5ff;startSize=28;whiteSpace=wrap;fontSize=16;align=left;spacing=0;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="-2035" y="-1660" width="270" height="181.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="308" value="&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;# account_id: int &#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;# customer_id: int &#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;# balance: float&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="part=1;html=1;resizeHeight=0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#edf5ff;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;fontSize=16;" parent="307" vertex="1">
+                    <mxGeometry y="28" width="270" height="73" as="geometry"/>
+                </mxCell>
+                <mxCell id="309" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="307" vertex="1">
+                    <mxGeometry y="101" width="270" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="310" value="&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+select(&lt;/span&gt;&lt;span style=&quot;font-size:15px;font-style: italic;&quot;&gt;table_name&lt;/span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;)&#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+delete(&lt;/span&gt;&lt;span style=&quot;font-size:15px;font-style: italic;&quot;&gt;table_name,condition&lt;/span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;)&#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+ deposit(amount: float)&#10;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: null; text-align: null; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;+ withdraw(amount: float)&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="part=1;resizeHeight=0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#edf5ff;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;" parent="307" vertex="1">
+                    <mxGeometry y="109" width="270" height="72.5" as="geometry"/>
+                </mxCell>
+                <UserObject label="" lucidchartObjectId="~l.CDT2wr9gG" id="311">
+                    <mxCell style="html=1;jettySize=18;whiteSpace=wrap;overflow=block;blockSpacing=1;fontSize=13;strokeOpacity=100;strokeWidth=0.8;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;endArrow=block;endFill=1;exitX=1.003;exitY=0.5;exitPerimeter=0;entryX=0.388;entryY=1.004;entryPerimeter=0;" parent="1" source="299" target="307" edge="1">
+                        <mxGeometry width="100" height="100" relative="1" as="geometry">
+                            <Array as="points">
+                                <mxPoint x="-2057" y="-1258"/>
+                                <mxPoint x="-2057" y="-1431"/>
+                                <mxPoint x="-1930" y="-1431"/>
+                            </Array>
+                        </mxGeometry>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="" lucidchartObjectId="dm.Cui0hfecb" id="312">
+                    <mxCell style="html=1;jettySize=18;whiteSpace=wrap;overflow=block;blockSpacing=1;fontSize=13;strokeOpacity=100;strokeWidth=0.8;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;endArrow=block;endFill=1;exitX=0.5;exitY=-0.004;exitPerimeter=0;entryX=0.559;entryY=1.004;entryPerimeter=0;" parent="1" source="295" target="307" edge="1">
+                        <mxGeometry width="100" height="100" relative="1" as="geometry">
+                            <Array as="points"/>
+                        </mxGeometry>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="" lucidchartObjectId="hm.CinU7.yrG" id="313">
+                    <mxCell style="html=1;jettySize=18;whiteSpace=wrap;overflow=block;blockSpacing=1;fontSize=13;strokeOpacity=100;strokeWidth=0.8;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;endArrow=block;endFill=1;exitX=0.5;exitY=-0.004;exitPerimeter=0;entryX=0.5;entryY=1.004;entryPerimeter=0;" parent="1" source="303" target="307" edge="1">
+                        <mxGeometry width="100" height="100" relative="1" as="geometry">
+                            <Array as="points"/>
+                        </mxGeometry>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="314" value="" style="html=1;overflow=block;blockSpacing=1;align=center;whiteSpace=wrap;fontSize=13;spacing=0;strokeColor=#3A5431;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#6d8764;strokeWidth=NaN;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="-1180" y="-1712" width="480" height="660" as="geometry"/>
+                </mxCell>
+                <UserObject label="Bank Employee" lucidchartObjectId="aF.C1J9vzcDG" id="315">
+                    <mxCell style="html=1;overflow=block;blockSpacing=1;shape=umlActor;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;whiteSpace=nowrap;fontSize=16;spacing=0;strokeColor=#3A5431;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#6d8764;strokeWidth=1.5;fontColor=#ffffff;" parent="1" vertex="1">
+                        <mxGeometry x="-1300" y="-1465" width="75" height="165" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="Create a Bank Account" lucidchartObjectId="BI.C.S-nnqcA" id="316">
+                    <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;ellipse;fontSize=16;spacing=3.8;strokeColor=#3A5431;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#6d8764;strokeWidth=1.5;fontColor=#ffffff;" parent="1" vertex="1">
+                        <mxGeometry x="-985" y="-1660" width="120" height="90" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="View Bank Accounts" lucidchartObjectId="aJ.CXlvjcnIg" id="317">
+                    <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;ellipse;fontSize=16;spacing=3.8;strokeColor=#3A5431;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#6d8764;strokeWidth=1.5;fontColor=#ffffff;" parent="1" vertex="1">
+                        <mxGeometry x="-985" y="-1513" width="120" height="90" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="Delete Bank Account" lucidchartObjectId="qJ.C~30U.~fq" id="318">
+                    <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;ellipse;fontSize=16;spacing=3.8;strokeColor=#3A5431;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#6d8764;strokeWidth=1.5;fontColor=#ffffff;" parent="1" vertex="1">
+                        <mxGeometry x="-985" y="-1217" width="120" height="90" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="Update Bank Account" lucidchartObjectId="qJ.CfSzeLn-t" id="319">
+                    <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;ellipse;fontSize=16;spacing=3.8;strokeColor=#3A5431;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#6d8764;strokeWidth=1.5;fontColor=#ffffff;" parent="1" vertex="1">
+                        <mxGeometry x="-985" y="-1375" width="120" height="90" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="" lucidchartObjectId="rL.CQrdT94UQ" id="320">
+                    <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=13;strokeColor=#3A5431;strokeOpacity=100;strokeWidth=0.8;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;endArrow=none;exitX=0.51;exitY=0.449;exitPerimeter=0;entryX=-0.002;entryY=0.567;entryPerimeter=0;fillColor=#6d8764;" parent="1" source="315" target="316" edge="1">
+                        <mxGeometry width="100" height="100" relative="1" as="geometry">
+                            <Array as="points"/>
+                        </mxGeometry>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="" lucidchartObjectId="vL.CSVNUjk1u" id="321">
+                    <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=13;strokeColor=#3A5431;strokeOpacity=100;strokeWidth=0.8;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;endArrow=none;exitX=1;exitY=0.5;exitPerimeter=0;entryX=-0.006;entryY=0.5;entryPerimeter=0;fillColor=#6d8764;" parent="1" source="315" target="317" edge="1">
+                        <mxGeometry width="100" height="100" relative="1" as="geometry">
+                            <Array as="points"/>
+                        </mxGeometry>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="" lucidchartObjectId="CL.Cn.7qBkcm" id="322">
+                    <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=13;strokeColor=#3A5431;strokeOpacity=100;strokeWidth=0.8;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;endArrow=none;exitX=1;exitY=0.5;exitPerimeter=0;entryX=-0.006;entryY=0.5;entryPerimeter=0;fillColor=#6d8764;" parent="1" source="315" target="319" edge="1">
+                        <mxGeometry width="100" height="100" relative="1" as="geometry">
+                            <Array as="points"/>
+                        </mxGeometry>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="" lucidchartObjectId="IL.CK6scGVyF" id="323">
+                    <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=13;strokeColor=#3A5431;strokeOpacity=100;strokeWidth=0.8;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;endArrow=none;exitX=0.51;exitY=0.449;exitPerimeter=0;entryX=-0.006;entryY=0.5;entryPerimeter=0;fillColor=#6d8764;" parent="1" source="315" target="318" edge="1">
+                        <mxGeometry width="100" height="100" relative="1" as="geometry">
+                            <Array as="points"/>
+                        </mxGeometry>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="Bank system" lucidchartObjectId="hQ.C33o43nX5" id="324">
+                    <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=16.7;spacing=0;strokeColor=#3A5431;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#6d8764;strokeWidth=NaN;fontColor=#ffffff;" parent="1" vertex="1">
+                        <mxGeometry x="-1030" y="-1750" width="180" height="45" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
