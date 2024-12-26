@@ -5,11 +5,19 @@ include_once "account.php";
         private $interest_rate;
         private $min_balance;
 
-        public function isert($valeu){
-            
-        }        
-        public function modife($valeu){
-            
+        public function __construct($_name,$email,$balance,$min_balance,$interest_rate)
+        {
+            parent::__construct($_name,$email,$balance);
+            $this->min_balance = $min_balance;
+            $this->interest_rate = $interest_rate;
+        }
+        public function getinterest_rate(){
+            return $this->interest_rate;
+        }
+        
+        public function getminimum_balance(){
+            return $this->min_balance;
+
         }
     }
 
