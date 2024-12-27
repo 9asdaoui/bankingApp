@@ -1,8 +1,13 @@
 <?php 
 include_once "account.php";
-    class currentAccount extends account{
+include_once "TableAttribute.php";
 
+#[TableAttribute('CurrentAccount')]
+class currentAccount extends account{
+
+        #[TableAttribute('overdraft_limit')]
         private $overdraft_limit;
+        
 
         public function __construct($_name,$email,$balance,$overdraft_limit)
         {
@@ -15,6 +20,16 @@ include_once "account.php";
         }
         public function setoverdraft_limit($overdraft_limit) {
             $this->overdraft_limit = $overdraft_limit;
+        }
+
+        public function save(PDO $db)
+        {
+            $lastID = parent::save($db);
+            // print_r($this->prepareDataValues());die();
+            $stmt = $db->prepare($this->prepareInsertQuery());
+            $stmt->execute($this->prepareDataValues());
+            
+            return $lastID;
         }
     }
 

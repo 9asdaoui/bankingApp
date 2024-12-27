@@ -24,5 +24,17 @@ include_once "account.php";
         public function settrans_fee($trans_fee) {
             $this->trans_fee = $trans_fee;
         }
+
+        public function getInsertQuery()
+        {
+            return "INSERT INTO `businessaccount`( `customer_id`, `credit_limit`, `transaction_fee`) VALUES (:id,:credit_limit,:transaction_fee)";
+        }
+
+        public function getInsertBindParams($mergedData)
+        {
+            return array_merge([
+                ":overdraft_limit" => $this->getoverdraft_limit(),
+            ], $mergedData);
+        }
 }
 ?>

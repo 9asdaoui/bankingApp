@@ -1,21 +1,20 @@
 <?php
-$host = 'localhost'; 
-$db = 'customerdb';
-$user = 'root';
-$pass = 'redaader@2000';  
+class Database {
+    private static $instance = null;
+    private $connection;
 
-$dsn = "mysql:host=$host;dbname=$db";
+    private function __construct() {
+        $this->connection = new PDO("mysql:host=localhost;dbname=customerdb", "root", "redaader@2000");
+    }
 
-try {
-    $pdo = new PDO($dsn, $user, $pass);
+    public static function getInstance() {
+        if (self::$instance === null) {
+            self::$instance = new Database();
+        }
+        return self::$instance;
+    }
 
-    echo "Connection successful!";
-
-    session_start();
-    define('pdo',$pdo);
-
-} catch (PDOException $ex) {
-    echo "Connection failed: " . $ex->getMessage();
+    public function getConnection() {
+        return $this->connection;
+    }
 }
-
-?>

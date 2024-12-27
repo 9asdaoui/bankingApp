@@ -1,12 +1,23 @@
 <?php
+require_once "Entity.php";
+require_once "TableAttribute.php";
 
-class account {
+#[TableAttribute('customer')]
+abstract class account extends entity {
+    #[TableAttribute('customer_id')]
     protected $customer_id;
-    protected $_name;
-    protected $email;
-    protected $balance;
 
+    #[TableAttribute('_name')]
+    protected $_name;
+
+    #[TableAttribute('email')]
+    protected $email;
+    
+    #[TableAttribute('balance')]
+    protected $balance;
+    
     public function __construct($name, $email, $balance) {
+        // parent::__construct();
         $this->_name = $name;
         $this->email = $email;
         $this->balance = $balance;
@@ -35,6 +46,15 @@ class account {
     }
     public function setBalance($balance) {
         $this->balance = $balance;
+    }
+
+    public function save(PDO $db)
+    {
+        $stmt = $db->prepare($this->prepareInsertQuery(account::class));
+        $stmt->execute($this->prepareDataValues(account::class));
+
+        $this->customer_id = $db->lastInsertId();
+        return $this->customer_id;
     }
 }
 
