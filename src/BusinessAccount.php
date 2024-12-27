@@ -1,6 +1,7 @@
 <?php 
 include_once "account.php";
     class businessAccount extends account{
+        
         private $credit_limit;
         private $trans_fee;
 
@@ -12,15 +13,16 @@ include_once "account.php";
         }
    
         public function getcredit_limit(){
-
             return $this->credit_limit;
-
         }
-        
+        public function setcredit_limit($credit_limit) {
+            $this->credit_limit = $credit_limit;
+        }
         public function gettransaction_fee(){
-
             return $this->trans_fee;
-
+        }
+        public function settrans_fee($trans_fee) {
+            $this->trans_fee = $trans_fee;
         }
 }
 ?>

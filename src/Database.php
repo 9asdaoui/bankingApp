@@ -14,8 +14,8 @@ try {
     session_start();
     define('pdo',$pdo);
 
-} catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+} catch (PDOException $ex) {
+    echo "Connection failed: " . $ex->getMessage();
 }
 
 ?>

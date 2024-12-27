@@ -2,6 +2,7 @@
 include_once "account.php";
 
     class savingsAccount extends account{
+        
         private $interest_rate;
         private $min_balance;
 
@@ -14,10 +15,15 @@ include_once "account.php";
         public function getinterest_rate(){
             return $this->interest_rate;
         }
-        
+        public function setinterest_rate($interest_rate) {
+            $this->interest_rate = $interest_rate;
+        }
         public function getminimum_balance(){
             return $this->min_balance;
 
+        }
+        public function setmin_balance($minimum_balance) {
+            $this->min_balance = $minimum_balance;
         }
     }
 
