@@ -1,21 +1,27 @@
 <?php
-$host = 'localhost'; 
-$db = 'customerdb';
-$user = 'root';
-$pass = 'redaader@2000';  
+class DatabaseConnection
+{
+    private $host = 'localhost';
+    private $db = 'customerdb';
+    private $user = 'root';
+    private $pass = 'redaader@2000';
+    private $pdo;
 
-$dsn = "mysql:host=$host;dbname=$db";
+    public function __construct()
+    {
+        $dsn = "mysql:host={$this->host};dbname={$this->db}";
+        try {
+            $this->pdo = new PDO($dsn, $this->user, $this->pass);
+            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $ex) {
+            die("Connection failed: " . $ex->getMessage());
+        }
+    }
 
-try {
-    $pdo = new PDO($dsn, $user, $pass);
-
-    echo "Connection successful!";
-
-    session_start();
-    define('pdo',$pdo);
-
-} catch (PDOException $ex) {
-    echo "Connection failed: " . $ex->getMessage();
+    public function getConnection()
+    {
+        return $this->pdo;
+    }
 }
 
 ?>

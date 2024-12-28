@@ -10,9 +10,9 @@ class AccountManager
 {
     private $dbh;
     
-function __construct()
+function __construct(DatabaseConnection $dbConnection)
 {
-    $this->dbh=pdo;
+    $this->dbh = $dbConnection->getConnection();
 }
 public function fetchdata($table_name)
 {
@@ -205,32 +205,3 @@ public function delete(Account $account)
 }
 }
 ?>
-
-
-
-
-
-      
-
-<!-- $columns = implode(", ", array_keys($data)); -->
-<!-- $placeholders = implode(", ", array_map(fn($col) => ":$col", array_keys($data))); -->
-
-
-<!-- // include_once "SavingsAccount.php";
-
-// class SavingsAccountRepository  
-
-// {
-
-//     public function insert(SavingsAccount $account)
-//     {
-        
-//     }
-//     public function select()
-//     {
-//         $accounts = [new SavingsAccount("", "")];
-//         //fetch
-//         return $accounts;
-//         // $accounts[0]->_name;
-//     }
-// } -->
